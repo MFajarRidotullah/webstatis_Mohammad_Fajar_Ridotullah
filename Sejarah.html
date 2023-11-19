@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Sejarah Batu Tulis Muruy</title>
+  <link rel="icon" type="image/x-icon" href="Images/Logofajar.jpeg">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <script src='main.js'></script>
+
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: url(Images/Galaxi4.jpeg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: cover;
+    }
+
+    .div-judul {
+      text-align: center;
+      color: #FFB000;
+      margin: 50px;
+      padding-left: 5px;
+      padding-right: 5px;
+      text-shadow: 1px 1px 3px #f5f5f5;
+      text-decoration-line: underline;
+      text-decoration-style: solid;
+
+
+    }
+
+    .h2-sub1 {
+      background: #1F4172;
+      color: #FFB000;
+      text-align: center;
+      line-height: 2;
+      margin: 70px;
+      border-style: dashed;
+      border-color: #f5f5f5;
+    }
+
+
+    .h2-sub2 {
+      background: #1F4172;
+      color: #FFB000;
+      text-align: center;
+      line-height: 2;
+      margin: 70px;
+      border-style: dashed;
+      border-color: #f5f5f5;
+    }
+
+    .div-p {
+      text-align: justify;
+      color: #FFB000;
+      margin: 70px;
+      padding-left: 15px;
+      padding-right: 15px;
+      border-style: dashed;
+      border-color: #f5f5f5;
+      background-color: #1F4172;
+
+    }
+  </style>
+
+  </Style>
+  <br>
+  <br>
+  <style class="body-sidebar">
+    .sidebar {
+      position: fixed;
+      width: 240px;
+      left: -240px;
+      height: 100%;
+      background: #132043;
+      transition: all .5s ease;
+    }
+
+    .sidebar a {
+      display: block;
+      height: 50px;
+      width: 100%;
+      color: #FFB000;
+      line-height: 65px;
+      padding-left: 20px;
+      box-sizing: border-box;
+      border-bottom: 1px solid #262626;
+      border-top: 1px solid #1F4172;
+      border-left: 5px solid transparent;
+      font-family: 'Open Sans', sans-serif;
+      transition: all .5s ease;
+    }
+
+    a.active,
+    a:hover {
+      border-left: 5px solid #FFB000;
+      color: #82A0D8;
+    }
+
+    .sidebar a i {
+      font-size: 20px;
+      margin-right: 16px;
+    }
+
+    .sidebar a span {
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    #check {
+      display: none;
+    }
+
+    label #btn,
+    label #cancel {
+      position: absolute;
+      cursor: pointer;
+      color: #FFB000;
+      border-radius: 3px;
+      border: 1px solid #FFB000;
+      margin: 15px 30px;
+      font-size: 29px;
+      background: #132043;
+      height: 35px;
+      width: 35px;
+      text-align: center;
+      line-height: 30px;
+      transition: all .5s ease;
+    }
+
+    label #cancel {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    #check:checked~.sidebar {
+      left: 0;
+    }
+
+    #check:checked~label #btn {
+      margin-left: 245px;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    #check:checked~label #cancel {
+      margin-left: 245px;
+      opacity: 1;
+      visibility: visible;
+    }
+
+    @media(max-width : 860px) {
+      .sidebar {
+        height: auto;
+        width: 70px;
+        left: 0;
+        margin: 100px 0;
+      }
+
+      #btn,
+      #cancel {
+        display: none;
+      }
+
+      span {
+        position: absolute;
+        margin-left: 23px;
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      .sidebar a {
+        height: 60px;
+      }
+
+      .sidebar a i {
+        margin-left: -10px;
+      }
+
+      a:hover {
+        width: 200px;
+        background: inherit;
+      }
+
+      .sidebar a:hover span {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  </style>
+
+  <style class="Header">
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .body-Header {
+      margin: 0;
+      padding: 0;
+      background: url(Images/Galaxi4.jpeg);
+    }
+
+    header {
+      height: 70px;
+      background-color: #1F4172;
+      display: flex;
+      padding: 0 100px;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+
+    }
+
+    .header-h1 {
+      color: #FFB000;
+      line-height: 70px;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #132043;
+      height: 70px;
+
+    }
+
+    li {
+      float: left;
+      height: 70px;
+    }
+
+    li a,
+    .dropdtn {
+      display: inline-block;
+      color: #FFB000;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      height: 70px;
+    }
+
+    li a:hover,
+    .dropdown:hover .dropdtn {
+      background-color: #82A0D8;
+      transition: all 0.5s ease;
+      height: 70px;
+
+    }
+
+    li.dropdown {
+      display: inline-block;
+      height: 70px;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #132043;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px #1F4172;
+      z-index: 1;
+
+
+    }
+
+    .dropdown-content a {
+      color: #FFB000;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+
+    }
+
+    .dropdown-content a:hover {
+      background-color: #1F4172;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+
+    }
+  </style>
+
+
+  <Style class="style-footer">
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+
+    @media (max-height:800px) {
+      footer {
+        position: static;
+      }
+    }
+
+
+    .footer-distributed {
+      background-color: #1F4172;
+      box-sizing: border-box;
+      widows: 100%;
+      text-align: left;
+      font: bold 16px sans-serif;
+      padding: 50px 50px 60px 50px;
+      margin-top: 80px;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .footer-distributed .footer-left {
+      width: 30%;
+    }
+
+    .footer-distributed h3 {
+      color: #FFB000;
+      font: normal 36px 'cookie', cursive;
+      margin: 0;
+    }
+
+    .footer-distributed h3 span {
+      color: #FFB000;
+    }
+
+    .footer-distributed .footer-links a {
+      display: inline-block;
+      line-height: 1.8;
+      text-decoration: none;
+      color: #FFB000;
+      background: #132043;
+    }
+
+    .footer-distributed .footer-company-name {
+      color: #FFB000;
+      font-size: 14px;
+      font-weight: normal;
+      margin: 0;
+    }
+
+    .footer-distributed .footer-center {
+      width: 35%;
+
+    }
+
+    .footer-distributed .footer-center i {
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+      background-color: #132043;
+      border-radius: 2px;
+      font-size: 20px;
+      color: #FFB000;
+      text-align: center;
+      line-height: 35px;
+      margin-right: 3px;
+      margin-bottom: 5px;
+
+    }
+
+    .footer-distributed .footer-center i.fa-envelope {
+      font-size: 17px;
+      line-height: 38px;
+    }
+
+    .footer-distributed .footer-center p {
+      display: inline-block;
+      color: #FFB000;
+      vertical-align: middle;
+      margin: 0;
+    }
+
+    .footer-distributed .footer-center p span {
+      display: block;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 2;
+    }
+
+    .footer-distributed .footer-center p a {
+      color: #FFB000;
+      text-decoration: none;
+    }
+
+    .footer-distributed .footer-right {
+      width: 30%;
+    }
+
+    .footer-distributed .footer-company-about {
+      line-height: 20px;
+      color: #FFB000;
+      font-size: 13px;
+      font-weight: normal;
+      margin: 0;
+
+    }
+
+    .footer-distributed .footer-company-about span {
+      display: block;
+      color: #FFB000;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .footer-distributed .footer-icons {
+      margin-top: 25px;
+    }
+
+    .footer-distributed .footer-icons a {
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+      background-color: #132043;
+      border-radius: 2px;
+      font-size: 20px;
+      color: #FFB000;
+      text-align: center;
+      line-height: 35px;
+      margin-right: 3px;
+      margin-bottom: 5px;
+
+    }
+
+    .footer-distributed .footer-icons a:hover {
+      background-color: #82A0D8;
+    }
+
+    .footer-links a:hover {
+      color: #82A0D8;
+    }
+
+    @media (max-width: 880px) {
+      .footer-distributed .footer-left .footer-distributed .footer-center .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+
+    }
+
+    .footer-distributed .footer-center i {
+      margin-left: 0;
+
+    }
+  </Style>
+
+</head>
+
+<body class="body-Header">
+  <header>
+    <img src="images/Logofajar.jpeg">
+    <h1 class="header-h1">Fajarinfo.com</h1>
+    <nav>
+      <ul class="navigation">
+        <li><a href="UST.HTML">Home</a></li>
+        <li class="dropdown">
+          <a href="javascript:voild(0)" class="dropdtn">About</a>
+          <div class="dropdown-content">
+            <a href="Sejarah.html">Sejarah Batu Tulis</a>
+            <a href="Profile.html">Profile Desa Muruy </a>
+          </div>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Registration.html">Registration</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+</body>
+<br>
+<br>
+<body class="body-sidebar">
+  <input type="checkbox" id="check">
+  <label for="check">
+    <i class="fas fa-bars" id="btn"><ion-icon name="home-outline" style="size: 5px;"></ion-icon></i>
+    <i class="fas fa-times" id="cancel"><ion-icon name="home-outline" style="size: 5px;"></ion-icon></i>
+  </label>
+  <div class="sidebar">
+    <a href="UST.HTML" class="active">
+      <i class="fas fa-home"></i>
+      <span>Home</span>
+    </a>
+    <a href="Sejarah.html">
+      <i class="fas fa-sejarah"></i>
+      <span>Sejarah</span>
+    </a>
+    <a href="Profile.html">
+      <i class="fas fa-profile"></i>
+      <span>Profile</span>
+    </a>
+    <a href="Gallery.html">
+      <i class="fas fa-galerry"></i>
+      <span>Gallery</span>
+    </a>
+    <a href="Registration.html">
+      <i class="far fa-question-registration"></i>
+      <span>Registration</span>
+    </a>
+    <a href="Contact.html">
+      <i class="far fa-contact"></i>
+      <span>Contact</span>
+    </a>
+    <a href="https://instagram.com/mohammadfajar35?igshid=OGQ5ZDc2ODk2ZA==">
+      <i class="fas fa-instagram"></i>
+      <span>Instagram</span>
+    </a>
+
+    <a href="https://youtube.com/@mfajarridotullah5315?feature=shared">
+      <i class="fas fa-youtube"></i>
+      <span>Youtube</span>
+    </a>
+    <a href="https://ngl.link/mohammadfajar35?fbclid=PAAabwKPD3KJtjR2k0aqxrE52zdB8r50fszMqMWMLxVDXceILj4rEQfiaVy_Y">
+      <i class="fas fa-pesan"></i>
+      <span>Pesan Rahasia</span>
+    </a>
+  </div>
+</body>
+<br>
+<br>
+<br>
+<body>
+  <div class="div-judul">
+    <h1>Sejarah Singkat Batu Tulis Muruy Pandeglang</h1>
+  </div>
+  <h2 class="h2-sub1">Sejarah Terbentuknya batu tulis muruy</h2>
+  <div class="div-p">
+    <br>
+    <p><b>Situs Batu Tulis Muruy merupakan
+        salah satu aspek sejarah dan juga
+        arkeologis yang mempunyai nilai sebagai
+        benda cagar budaya yang merupakan data
+        dari perkembangan sejarah islam di Jawa
+        Barat khususnya di Banten. Batu tulis
+        Muruy merupakan cagar budaya jenis
+        situs. Letaknya berada di daratan dan di
+        samping aliran sungai, mengandung
+        benda (berupa batu) dan merupakan hasil
+        dari kegiatan manusia di masa lampau. Isi
+        dari pada situs batu tulis Muruy sendiri
+        merupakan bentuk kaligrafi berupa
+        aksara Arab yang cukup sederhana
+        dengan makna sebagai berikut:“Athal haman khomsatun anabu
+        Sahro Al- Sanatun (1161 H)”
+        <br>
+        <br>
+        Berdasarkan kalimat tersebut situs
+        batu tulis Muruy disebut sebagai
+        candrasengkala karena berisi
+        penanggalan tahun 1161 Hijriah, yang
+        apabila dihitung kedalam tahun Masehi
+        maka dapat diperkirakan tahun sekitar
+        1741 Masehi, dimana pada saat itu yang
+        memerintah di kerajaan islam Banten
+        adalah Sultan Muhammad Syifa Zaenal
+        Arifin (1733-1750) yang merupakan
+        Sultan Banten ke-10.
+        <br>
+        <br>
+        Pada saat Banten dikuasai oleh
+        Belanda, keadaan Banten sangat kacau
+        dilihat dari segi keamanan sosial budaya
+        dan perekonomian. Setelah masuknya
+        pengaruh VOC (Vereniging Oost-Indie
+        Compagnie, yaitu perkumpulan dagang
+        Belanda di Indonesia tahun 1602-1799)
+        dan adanya penjajahan colonial Belanda
+        Kerajaan Islam Banten mengalami
+        kemunduran (Juliadi dkk, 2019). Tidak
+        sedikit masyarakat Banten pada saat itu
+        mengungsi ke daerah lain. Termasuk dari
+        kalangan kesultanan Banten diantaranya
+        salah seorang kesepuhan keluarga
+        kesultanan, yaitu Nyi Kamillah, beliau
+        Bersama kedua puteranya pergi menuju
+        Muruy dan menetap disana
+        <br>
+        Ketika dewasa keduanya meminta izin kepada
+        Nyi Kamilah untuk kembali dan
+        menemui Sultan Banten. Kemudian
+        keduanya diangkat menjadi prajurit
+        keamanan kesultanan. Ketika Sultan
+        mengetahui latar belakang keluarga
+        kedua putera Nyi Kamilah yang
+        merupakan putra kesepuhan Banten,
+        Sultan meminta keduanya untuk
+        menjemput ibunya, Nyi Kamilah yang
+        masih menetap di Muruy. Akhirnya Nyi
+        Kamilah bersama kadua puteranya
+        kembali pulang ke kesultanan Banten
+        meninggalkan Muruy. Sebelum pergi
+        kembali ke kesultanan Banten, kedua
+        putera Nyi Kamilah mendekati batu besar
+        dan menuliskan kalimat aksara Arab
+        (kaligrafi) pada batu tersebut. Kalimat
+        tersebut merupakan candra sengkala
+        (pertanggalan). Setelah selesai menulis
+        mereka kembali ke kesultanan Banten,
+        menjadi prajurit keamanan kesultanan
+        untuk berjuan bersama melepaskan
+        Banten dari penjajah Belanda dan
+        mengembalikan kejayaan Bnaten (Rini,
+        2019).
+      </b></p>
+    <br>
+  </div>
+  <h2 class="h2-sub2">Upaya Perlindungan Cagar Budaya Situs Batu
+    Tulis Muruy</h2>
+  <div class="div-p">
+    <br>
+    <h3><b>Undang-Undang RI Nomor 11
+        Tahun 2010 Tentang Cagar Budaya</b></h3>
+    <br>
+    <p>Perlindungan cagar budaya
+      menurut undang-undang meliputi upaya
+      mencegah dan menanggulangi dari
+      kerusakan, kehancuran, atau kemusnahan
+      dengan cara penyelamatan, pengamanan,
+      zonasi, pemeliharaan, dan pemugaran
+      cagar budaya, perubahan yang terjadi
+      dalam pengertian benda cagar budaya,
+      cakupan cagar budaya, prosedur,
+      persyaratan dan sanksi. Maka dari itu
+      akan dijelaskan kondisi cagar budaya
+      situs batu tulis Muruy berdasarkan ruang
+      lingkup pelestarian cagar budaya yaitu:
+      mendaftarkan dan menetapkan,
+      perlindungan, pengembangan, dan
+      pemanfaatan cagar budaya.
+      Berdasarkan rekomendasi tim ahli
+      cagar budaya Pemerintah Pusat dan
+      Pemerintah Daerah, situs batu tulis
+      Muruy telah terdaftar dan ditetapkan
+      sebagai cagar budaya dengan
+      memperoleh peringkat tingkat
+      kabupaten/kota pada 2 Januari tahun
+      2018. Adapun syarat-syarat cagar budaya
+      peringkat kabupaten/kota adalah
+      memiliki masa gaya yang khas, memiliki
+      tingkat keterancaman yang tinggi, jumlah
+      dan jenisnya terbatas dan diutamakan
+      dilestarikan di wilayah kabupaten/kota.
+      Penetapan peringkat cagar budaya
+      tersebut dikeluarkan oleh bupati
+      kabupaten Pandeglang melalui surat
+      keputusan dengan Nomor 432/Kep. 9 –
+      Huk/2018.
+      Ruang lingkup situs batu tulis
+      Muruy dalam perlindungan cagar budaya
+      dapat didefinisikan sebagai upaya
+      pencegah dan menanggulangi dari
+      kerusakan atau kemusnahan dengan cara
+      penyelamatan, pengamanan, zonasi,
+      pemeliharaan dan pemugaran cagar
+      budaya. Situs batu tulis Muruy saat ini
+      sudah melalui dan dalam proses
+      perlindungan, dibuktikan dengan
+      penyelamatan batu tulis pada saat
+      ditemukan yaitu dalam keadaan terlilit
+      akar pohon, hingga saat ini situs batu tulis
+      Muruy sudah beberapa kali dilakukan
+      kegiatan konservasi dan perlindungan
+      situs cagar budaya berupa pemberian
+      cungkup dan pagar. Seperti yang
+      dikatakan oleh Ibu Mimi di Kantor BPBBanten pada 19 April 2021 “Dari BPCBBanten kami melakukan tindakan
+      berdasarkan data laporan yang kami milki
+      pada tangun 1991 dilakukan pembuatan
+      cungkup tanpa dinding, dan juga
+      pemagaran situs”<br><br>
+      Dengan diperbaharuinya UndangUndang Republik Indonesia Nomor 5
+      Tahun 1992 menjadi Undang-Undang
+      Republik Indonesia Nomor 11 Tahun
+      2010 tentang cagar budaya, maka
+      aturannya pun telah diubah, salah satunya
+      yaitu kawasan dan lingkungan dari situs
+      termasuk dalam cagar budaya yang perlu
+      dilindungi sebagaimana mestinya. Pada
+      situs batu Tulis Muruy, terdapat kawasan
+      dan lingkungan situs seperti atap, pagar
+      serta halaman situs yang juga
+      keberadaannya turut dipelihara dan
+      memiliki fungsi dalam upaya pelestarian
+      benda cagar budaya, yaitu batu tulis
+      tersebut. Selain itu menyedian juru
+      pelihara di lokasi situs batu tulis Muruy
+      merupakan upaya dalam perlindungan
+      dan pemeliharaan cagar budaya, dimana
+      juru pelihara dapat mengawasi kondisi
+      dan keamanan situs batu tulis Muruy
+      secara langsung.Tujuan dari pelestarian dalam
+      Undang-Undang Cagar Budaya sendiri
+      yaitu untuk melestarikan warisan budaya,
+      memperkuat kepribadian bangsa,
+      meningkatkan kesejahteraan harkat dan
+      martabat bangsa serta untuk
+      mempromosikan warisan budaay itu
+      sendiri.
+      <br><br>
+      Ruang lingkup situs batu tulis
+      Muruy pada pengembangan cagar budaya
+      adalah meningkatkan potensi nilai,
+      informasi, dan promosi cagar budaya,
+      serta segiatan yang tidak bertentangan
+      dengan tujuan pelestarian. Bentuk
+      pengembangan cagar budaya terbagi
+      dalam tiga kegiatan, penelitian,
+      revitalisasi, adaptasi. Melalui kegiatan
+      penelitian, situs batu tulis Muruy dapat
+      diketahui sehingga secara akademik dapt
+      dipertanggung jawabkan. Kegiatan
+      revitalisasi dapat didefinisikan sebagai
+      upaya untuk memvitalkan kembali suatu
+      mengubah tempat atau lokasi cagar
+      budaya agar digunakan menjadi fungsi
+      yang sebagaimana mestinya. Situs batu
+      tulis Muruy upaya pengembangan
+      tersebut masih dalam proses, dimana
+      masyarakat berupaya agar situs batu tulis
+      Muruy dapat dijadikan wisata sejarah
+      dengan tetap memperhatikan kelestarian
+      cagar budaya. Sejatinya revitalisasi
+      diharapkan dapat memberi manfaat
+      kepada masyarakat.
+      <br><br>
+      Bentuk pengembangan lain yaitu
+      adaptasi yang dilakukan dengan cara
+      mempertahankan nilai pada cagar budaya
+      juga dengan menambahkan atau
+      menyediakan fasilitas yang sesuai dengan
+      kebutuhan saat itu. Dapat dilihat pada
+      situs batu tulis Muruy telah tersedia
+      berbagai fasilitas contohnya seperti
+      papan informasi yang diperuntukan bagi
+      masyarakat dan pengunjung.
+      Ruang lingkup pemanfaatan cagar
+      budaya pada situs batu tulis Muruy adalah
+      dengan tetap mempertahankan
+      kelestariannya dilakukan pendayagunaan
+      kepentingan dan kesejahteraan rakyat.
+      Masyarakat harus merubah pola pikir
+      bahwa pelestarian cagar budaya bukan
+      hanya sekedar untuk memajukan
+      kebudayaan nasional tetapi lebih dari itu
+      untuk kemakmuran dan kesejahteraan
+      rakyat. Jika situs batu tulis Muruy
+      dikelola dengan baik, maka melalui
+      pelestarian tersebut situs dapat
+      dimanfaatkan kembali, selain bermanfaat
+      bagi ilmu pengetahuan situs batu tulis
+      Muruy juga dapat dijadikan tempat
+      wisata sejarah dengan memanfaatkan
+      lingkungan di sekitar situs dengan tetap
+      memperhatikan keamanan situs juga
+      tetap berorientasi pada aturan yang
+      berlaku.
+      <br>
+      <br>
+      Kegiatan pelestarian cagar budaya
+tidak dapat dilakukan tanpa melihat
+aturan yang berlaku, karena
+dikhawatirkan dapat mengancam keberadan cagar budaya. Kini
+pemeliharaan cagar budaya bukan lagi
+hanya tanggung jawab pihak pengelola
+dan pemerintah yang dominan dalam
+tindakan pemeliharaan tersebut, tetapi
+jauh dari itu masyarakat setempat juga
+harus turut aktif dalam menjaga dan
+terlibat langsung. Sebagaimana
+dijelaskan cagar budaya berupa
+kebendaan ini harus dikelola oleh
+pemerintah pusat dan daerah dengan
+mengikut sertakan masyarakat dalam
+pengelolaannya. Masyarakat diharapkan
+memiliki tingkat kepedulian juga
+pemahaman yang memadai dalam upaya
+pelestarian cagar budaya, khususnya
+masyarakat Muruy itu sendiri, dimana
+masyarakat Muruy hidup dan bertempat
+tinggal yang sama dengan lokasi situs.
+Sejauh ini masyarakat setempat
+sudah memahami bahwa situs batu tulis
+Muruy berada di bawah perlindungan
+Undang-Undang Cagar budaya. Namun
+hanya sekedar mengenai cagar budaya
+tersebut harus dirawat, tidak boleh
+dirusak dan memiliki jeratan sanksi.
+Berdasarkan wawancara dengan salah
+satu masyarakat Muruy bapak Tatan di
+Kampung Muruy pada 20 Desember
+2021 menjelaskan bahwa “situs batu tulis
+Muruy merupakan cagar budaya yang
+dilindungi oleh Undang-Undang harus
+dipelihara dengan baik apabila terjadi
+kerusakan yang disebabkan oleh
+seseorang, maka seseorang tersebut akan
+dikenakan sanksi”
+    </p>
+    <br>
+  </div>
+</body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<body class="body-footer">
+  <!--body ini yaitu tentang footer yang ada di halaman dropdown About-sejarah -->
+  <footer class="footer-distributed">
+    <div class="footer-left">
+      <h3>Fajar<span>info.com</span></h3>
+      <p class="footer-links">
+        <a href="Biodata.html">Biodata</a>
+      </p>
+      <p class="footer-company-name">Copyright 2023 <strong>M. Fajar Ridotullah</strong>
+        -Fajarinfo.com</p>
+    </div>
+
+    <div class="footer-center">
+      <div>
+        <i class="fa fa-map-marker"><ion-icon name="location-outline"></ion-icon></i>
+        <p><span>Pandeglang</span></p>
+      </div>
+
+      <div>
+        <i class="fa fa-phone"><ion-icon name="call-outline"></ion-icon></i>
+        <p>083841310066</p>
+      </div>
+
+      <div>
+        <i class="fa fa-envelope"><ion-icon name="mail-outline"></ion-icon></i>
+        <p>mfajarridotulla@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="footer-right">
+      <p class="footer-company-about">
+        <span>About The Company</span>
+        <strong>Fajarinfo.com</strong> merupakan website informasi yang di dirikan dan dikembangkan oleh M. Fajar
+        Ridotullah, pada halaman website ini menyedikan informasi terkait ilmu pengetahuan, pendidikan, sejarah,
+        kesehatan dan kecantikan, website ini berdiri sekitar tahun 2023.
+      </p>
+
+      <div class="footer-icons">
+        <a href="https://instagram.com/mohammadfajar35?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa fa-Instagram"><ion-icon
+              name="logo-instagram"></ion-icon></i></a>
+        <a href="https://youtube.com/@mfajarridotullah5315?feature=shared"><i class="fa fa-Youtube"></i><ion-icon
+            name="logo-youtube"></ion-icon></a>
+        <a href="https://ngl.link/mohammadfajar35?fbclid=PAAabwKPD3KJtjR2k0aqxrE52zdB8r50fszMqMWMLxVDXceILj4rEQfiaVy_Y"><i
+            class="fa fa-Pesanbebas"><ion-icon name="chatbubble-ellipses-outline"></ion-icon></a>
+      </div>
+
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
